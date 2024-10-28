@@ -53,7 +53,7 @@ nav{
 
 .addbtn{
     padding: 10px;
-    background-color: #9d7a5f;
+    background-color: #513b35;
     border: none;
     cursor: pointer;
     color: #fff;
@@ -64,7 +64,7 @@ nav{
 }
 
 .addbtn:hover{
-    background-color: #513b35;
+    background-color: #9d7a5f;
 }
 
 .added{
@@ -145,6 +145,7 @@ nav{
     nav{
         align-items: center;
         justify-content: center;
+        
     }
 
 
