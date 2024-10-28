@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+
+
+}
+
+body{
+    background-color: #bab0a7;
+}
+
+header{
+    height: 50px;
+}
+
+nav{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    box-shadow: 0px 0px 5px;
+    padding-left: 10px;
+    background-color: #513b35;
+    color: white;
+
+}
+
+.logo{
+    font-size: 20px;
+    font-family: "Rubik Wet Paint", system-ui;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container form input{
+    padding: 10px;
+    width: 500px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+
+.addbtn{
+    padding: 10px;
+    background-color: #9d7a5f;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+.addbtn:hover{
+    background-color: #513b35;
+}
+
+.added{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.task{
+    background-color: #9d7a5f;
+    text-align: left;
+    height: 50px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: small;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    width: 70%;
+    padding: 30px;
+    
+}
+
+.task p{
+    overflow: hidden;
+
+}
+
+
+
+.deletebtn{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    transition: 0.1s ease-out;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.deletebtn:hover{
+    background-color: #513b35;
+    color: white;
+}
+
+@media (max-width: 768px){
+
+    .task{
+        background-color: #9d7a5f;
+        text-align: left;
+        height: 50px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: small;
+        align-items: center;
+        display: flex;
+        font-weight: bold;
+        justify-content: space-between;
+        width: 90%;
+        padding: 30px;
+        
+    }
+    nav{
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .container form input {
+        width: 300px;
+    }
+
+  
+
+    #myform{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
