@@ -59,6 +59,7 @@ nav{
     color: #fff;
     font-weight: bold;
     border-radius: 10px;
+    width: 100px;
 
 }
 
@@ -118,6 +119,14 @@ nav{
 
 @media (max-width: 768px){
 
+
+
+    .addbtn{
+        width: 100px;
+    }
+
+
+
     .task{
         background-color: #9d7a5f;
         text-align: left;
@@ -129,8 +138,8 @@ nav{
         display: flex;
         font-weight: bold;
         justify-content: space-between;
-        width: 90%;
-        padding: 30px;
+        width: 80%;
+        padding: 10px;
         
     }
     nav{
