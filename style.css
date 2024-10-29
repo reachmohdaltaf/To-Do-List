@@ -96,6 +96,7 @@ nav{
 
 .task p{
     overflow: hidden;
+    width: 900px;
 
 }
 
@@ -158,6 +159,12 @@ nav{
 
     .container form input {
         width: 300px;
+    }
+
+    .task p{
+        overflow: hidden;
+        width: 200px;
+    
     }
 
   
