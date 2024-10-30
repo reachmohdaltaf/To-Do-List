@@ -90,48 +90,79 @@ nav{
     font-weight: bold;
     justify-content: space-between;
     width: 70%;
-    padding: 30px;
+    padding-left: 10px;
     
 }
 
 .task p{
     overflow: hidden;
-    width: 80%;
+    width: 90%;
 
 }
 
+.complete{
+ padding: 10px;
+ border-radius: 10px;
+ border: none;
+ background-color: rgb(84, 126, 84);
+ font-weight: bold;
+ cursor: pointer;
+ border: rgb(99, 156, 99) 3px outset;
+ font-size: 18px;
+ color: white;
+ margin-left: 10px;
+}
+
+.complete:hover{
+    scale: 0.964;
+}
+
 .editbtn{
-    background-color: #ddb892;
+    background-color: #fff;
     padding: 10px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    font-weight: bold;
+    border: 3px outset;
+    color: black;
+    font-size: 10px;
+
+    
+    
 
 
 }
 
 .editbtn:hover{
-    background-color: #513b35;
-    color: white;
+    color: black;
+    scale: 0.964;
+
 }
 
 
 
 
 .deletebtn{
-    height: 40px;
     border-radius: 10px;
     border: none;
     width: 80px;
     transition: 0.1s ease-out;
     cursor: pointer;
     font-weight: bold;
+    background-color: #513b35;
+    border: 3px outset #5e3f37;
+    font-size: 10px;
+    padding: 10px;
+    color: white;
+    margin: 5px;
+
+
 
 }
 
 .deletebtn:hover{
-    background-color: #513b35;
-    color: white;
+    scale: 0.964;
 }
 
 @media (max-width: 768px){
@@ -143,6 +174,14 @@ nav{
 
     .addbtn{
         width: 100px;
+    }
+
+    .complete{
+        margin-left: 1px;
+    }
+
+    .deletebtn{
+        margin-left: 1px;
     }
 
    
@@ -161,7 +200,7 @@ nav{
         font-weight: bold;
         justify-content: space-between;
         width: 90%;
-        padding: 10px;
+        padding-left: 10px;
         
     }
     nav{
@@ -181,7 +220,7 @@ nav{
 
     .task p{
         overflow: hidden;
-        width: 60%;
+        width: 50%;
     
     }
 

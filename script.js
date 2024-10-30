@@ -1,6 +1,7 @@
 const myform = document.querySelector("#myform");
 const input = document.querySelector("#input");
 const added = document.querySelector(".added");
+let completedTasks = JSON.parse(localStorage.getItem("completedTasks")) || [];
 
 myform.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -24,12 +25,17 @@ const createTask = (task) => {
   const taskElement = document.createElement("p");
   const deletebtn = document.createElement("button");
   const editbtn = document.createElement('button')
+  const completebtn = document.createElement('button')
+
 
   taskcontainer.classList.add("task");
   deletebtn.classList.add("deletebtn");
+  completebtn.classList.add("complete")
+  completebtn.textContent = "✔"
   deletebtn.innerText = "Delete";
   editbtn.innerText = "Edit";
   editbtn.classList.add("editbtn");
+
 
   
   deletebtn.addEventListener('click', () => {
@@ -54,11 +60,20 @@ editbtn.addEventListener('click', ()=>{
 });
 
 
+completebtn.addEventListener('click', ()=>{
+  completedtask(task, taskcontainer);
+})
+
+
+
+
+
  
   taskElement.innerText = task;
   taskcontainer.append(taskElement);
   taskcontainer.append(editbtn);
   taskcontainer.append(deletebtn);
+  taskcontainer.append(completebtn)
   added.append(taskcontainer);
 };
 
@@ -76,7 +91,19 @@ window.addEventListener("load", () =>{
         dailytask.forEach(task => {
             createTask(task);
         });
+        completedTasks.forEach(task => {
+          console.log("Completed task loaded:", task);
+        });
 })
+
+
+const completedtask = (task, taskcontainer) => {
+  completedTasks.push(task);
+  localStorage.setItem("completedTasks", JSON.stringify(completedTasks));
+  localStorage.removeItem("tasks")
+  taskcontainer.remove();
+};
+
 
 
 
