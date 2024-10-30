@@ -96,6 +96,7 @@ nav{
 
 .task p{
     overflow: hidden;
+    text-overflow: ellipsis;
     width: 90%;
 
 }
@@ -219,8 +220,8 @@ nav{
     }
 
     .task p{
-        overflow: hidden;
-        width: 50%;
+        text-overflow: ellipsis;
+        width: 60%;
     
     }
 
